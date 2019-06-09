@@ -58,6 +58,8 @@ promise是一种容器，里面保存着未来才会结束的事件结果。
 - 在es5中也可以模拟es6的let
     let声明的变量不能再全局作用域里调用
     下面通过块级作用域模拟实现let
+
+```
     function note(count){
         (function(){
             for (var i = 0;i < count; i++){
@@ -67,3 +69,4 @@ promise是一种容器，里面保存着未来才会结束的事件结果。
         console.log(i) //报错
     }
     note(3)
+```
