@@ -61,9 +61,9 @@ promise是一种容器，里面保存着未来才会结束的事件结果。
     function note(count){
         (function(){
             for (var i = 0;i < count; i++){
-                console.log(i) //[0,1,2,3,4]
+                console.log(i) //[0,1,2]
             }
         })()
         console.log(i) //报错
     }
-    note(5)
+    note(3)
